@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonebot_plugin_help_baize"
+version = "1.0.0"
+description = "NoneBot2 帮助中心插件，自动扫描全部插件并生成精美分类帮助图片，支持 Web UI 在线管理分类与排序"
+license = { text = "MIT" }
+authors = [{ name = "Baize", email = "2491434931@qq.com" }]
+readme = "README.md"
+keywords = ["nonebot", "nonebot2", "help", "menu", "帮助", "菜单"]
+requires-python = ">=3.9"
+dependencies = [
+    "nonebot2>=2.2.0",
+    "Pillow>=9.0",
+    "httpx>=0.20",
+    "fastapi>=0.100",
+    "pydantic>=2.0",
+    "nonebot-adapter-onebot>=2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/sangonomiya249/nonebot_plugin_help_baize"
+Repository = "https://github.com/sangonomiya249/nonebot_plugin_help_baize"
+
+[project.entry-points."nonebot2.plugin"]
+nonebot_plugin_help_baize = "nonebot_plugin_help_baize:__plugin_meta__"
+
+[tool.setuptools.packages.find]
+include = ["nonebot_plugin_help_baize*"]
+exclude = ["screenshots*", "examples*", "tests*", "docs*"]
+
+[tool.setuptools.package-data]
+"nonebot_plugin_help_baize" = ["data/.gitkeep", "category_map.json"]
