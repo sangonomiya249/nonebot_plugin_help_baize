@@ -4,7 +4,7 @@
 
 ### 预览
 
-<img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_help_baize/main/screenshots/help-overview.png" width="600" alt="帮助概览">
+<img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_help_baize/main/screenshots/help-overview.png" width="350" alt="帮助概览">
 
 ### 安装
 
